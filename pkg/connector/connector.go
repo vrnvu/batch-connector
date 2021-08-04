@@ -17,8 +17,8 @@ import (
 
 // Persistance table structure, tableName and columns associated
 type Table struct {
-	tableName   string
-	columnNames []string
+	TableName   string
+	ColumnNames []string
 }
 
 type Connector struct {
