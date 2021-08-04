@@ -76,8 +76,8 @@ func (c *Connector) Run(table Table, transformer Transformer) {
 
 	<-wait
 
-	tableName := table.tableName
-	columnNames := table.columnNames
+	tableName := table.TableName
+	columnNames := table.ColumnNames
 
 	group.Go(func() error {
 		errChannel := c.consume(ctx, conn, c.batchSize, recordsChannel, tableName, columnNames)
